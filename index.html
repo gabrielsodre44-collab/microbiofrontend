@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MicrobioLab - MVP</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🔬 MicrobioLab</h1>
+    <div class="card">
+      <h2>Inserir resultados</h2>
+      <label>TSI</label><input id="tsi" placeholder="ex: A/A, K/A, K/K" />
+      <label>Citrato</label><input id="citrato" placeholder="positivo / negativo" />
+      <label>Indol</label><input id="indol" placeholder="positivo / negativo" />
+      <label>Fenilalanina</label><input id="fen" placeholder="positivo / negativo" />
+      <button id="buscar">Buscar</button>
+      <div id="msg" class="info"></div>
+    </div>
+
+    <div id="results" class="card" style="display:none">
+      <h2>Resultados</h2>
+      <div id="list"></div>
+    </div>
+  </div>
+
+  <script src="api.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
